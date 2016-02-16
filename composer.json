@@ -1,0 +1,36 @@
+{
+    "name": "roadworkrah/ecosystem",
+    "description": "Asset aware environments",
+    "keywords": [
+        "php",
+        "environment",
+        "asset management"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Burkett",
+            "email": "nathan@nathanb.me"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0",
+        "laravel/laravel": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "RoadworkRah\\Ecosystem\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RoadworkRah\\Ecosystem\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

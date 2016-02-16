@@ -1,0 +1,42 @@
+<?php
+
+namespace {{namespace}};
+
+use RoadworkRah\Ecosystem\Contracts\AssetCollectionContract;
+use RoadworkRah\Ecosystem\Entities\AbstractEcosystem as Ecosystem;
+
+class {{class}} extends Ecosystem implements AssetCollectionContract
+{
+    /**
+     * Default {{class}} head scripts
+     * @return array
+     */
+    final public function defaultHeadScripts()
+    {
+        return [
+            '' => ['src' => '']
+        ];
+    }
+
+    /**
+    * Default {{class}} stylesheets
+    * @return array
+    */
+    final public function defaultStylesheets()
+    {
+        return [
+            '' => ['href' => '']
+        ];
+    }
+
+    /**
+    * Default {{class}} footer scripts
+    * @return array
+    */
+    final public function defaultFooterScripts()
+    {
+        return [
+            '' => ['src' => '']
+        ];
+    }
+}
