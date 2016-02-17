@@ -3,7 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 
-Ecosystem is a simple and smart environment manager for your user-facing scripts and stylesheets and provides basic constant creation and use for each Ecosystem.
+Ecosystem is a simple and smart environment manager for your user-facing scripts and stylesheets.
 
 Ecosystems are useful when you have collections of separate resources for differing sections of your application - http://example.com vs. http://example.com/admin. Creating an Ecosystem for each section allows to you manage each's resources in a collection one place while being able to add new resources to the collection on the fly.
 
