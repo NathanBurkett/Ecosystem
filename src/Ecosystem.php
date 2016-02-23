@@ -100,6 +100,8 @@ class Ecosystem implements EcosystemContract
 
         if (file_exists($path)) {
             return $this->devEnvironment() ? $file : $file . $this->appendCacheBusting($file, $path);
+        } else {
+            return $file;
         }
     }
 
