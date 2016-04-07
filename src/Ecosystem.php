@@ -1,22 +1,22 @@
 <?php
 
-namespace RoadworkRah\Ecosystem;
+namespace NathanBurkett\Ecosystem;
 
-use RoadworkRah\Ecosystem\Contracts\EcosystemContract;
-use RoadworkRah\Ecosystem\Contracts\AssetOutputContract;
-use RoadworkRah\Ecosystem\Contracts\AssetCollectionContract;
+use NathanBurkett\Ecosystem\Contracts\EcosystemContract;
+use NathanBurkett\Ecosystem\Contracts\AssetOutputContract;
+use NathanBurkett\Ecosystem\Contracts\AssetCollectionContract;
 
 class Ecosystem implements EcosystemContract
 {
     /**
      * Asset colleciton manager
-     * @var \RoadworkRah\Ecosystem\Contracts\AssetCollectionContract
+     * @var \NathanBurkett\Ecosystem\Contracts\AssetCollectionContract
      */
     protected $asset_manager;
 
     /**
      * Html builder
-     * @var \RoadworkRah\Ecosystem\Contracts\HtmlOutputContract
+     * @var \NathanBurkett\Ecosystem\Contracts\HtmlOutputContract
      */
     protected $output;
 

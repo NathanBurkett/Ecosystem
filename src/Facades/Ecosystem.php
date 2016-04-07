@@ -1,6 +1,6 @@
 <?php
 
-namespace RoadworkRah\Ecosystem\Facades;
+namespace NathanBurkett\Ecosystem\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

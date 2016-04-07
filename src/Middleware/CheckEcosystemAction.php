@@ -1,10 +1,10 @@
 <?php
 
-namespace RoadworkRah\Ecosystem\Middleware;
+namespace NathanBurkett\Ecosystem\Middleware;
 
 use Closure;
-use RoadworkRah\Ecosystem\Ecosystem;
-use RoadworkRah\Ecosystem\Builders\HtmlBuilder;
+use NathanBurkett\Ecosystem\Ecosystem;
+use NathanBurkett\Ecosystem\Builders\HtmlBuilder;
 
 class CheckEcosystemAction
 {

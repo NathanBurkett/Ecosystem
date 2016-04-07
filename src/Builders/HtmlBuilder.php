@@ -1,9 +1,9 @@
 <?php
 
-namespace RoadworkRah\Ecosystem\Builders;
+namespace NathanBurkett\Ecosystem\Builders;
 
 use Illuminate\Support\HtmlString;
-use RoadworkRah\Ecosystem\Contracts\AssetOutputContract;
+use NathanBurkett\Ecosystem\Contracts\AssetOutputContract;
 
 class HtmlBuilder implements AssetOutputContract
 {

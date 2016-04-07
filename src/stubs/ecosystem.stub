@@ -2,8 +2,8 @@
 
 namespace {{namespace}};
 
-use RoadworkRah\Ecosystem\Contracts\AssetCollectionContract;
-use RoadworkRah\Ecosystem\Entities\AbstractEcosystem as Ecosystem;
+use NathanBurkett\Ecosystem\Contracts\AssetCollectionContract;
+use NathanBurkett\Ecosystem\Entities\AbstractEcosystem as Ecosystem;
 
 class {{class}} extends Ecosystem implements AssetCollectionContract
 {

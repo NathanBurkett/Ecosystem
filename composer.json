@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RoadworkRah\\Ecosystem\\": "src/"
+            "NathanBurkett\\Ecosystem\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RoadworkRah\\Ecosystem\\Test\\": "tests"
+            "NathanBurkett\\Ecosystem\\Test\\": "tests"
         }
     },
     "scripts": {
