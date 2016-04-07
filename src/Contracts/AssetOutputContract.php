@@ -1,6 +1,6 @@
 <?php
 
-namespace RoadworkRah\Ecosystem\Contracts;
+namespace NathanBurkett\Ecosystem\Contracts;
 
 interface AssetOutputContract
 {

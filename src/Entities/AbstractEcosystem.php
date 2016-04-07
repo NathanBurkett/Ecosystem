@@ -1,6 +1,6 @@
 <?php
 
-namespace RoadworkRah\Ecosystem\Entities;
+namespace NathanBurkett\Ecosystem\Entities;
 
 use Illuminate\Support\Collection;
 

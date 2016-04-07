@@ -1,6 +1,6 @@
 <?php
 
-namespace RoadworkRah\Ecosystem\Commands;
+namespace NathanBurkett\Ecosystem\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

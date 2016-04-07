@@ -4,12 +4,20 @@ All Notable changes to `RoadworkRah/Ecosystem` will be documented in this file
 
 ## NEXT
 
-### 1.1.0
+### 0.1.0
 Full-Testing Coverage
 
 ## Current and Previous
 
-1.0.0 - Initial version
+0.0.2
+-----
+* update namespace and packagist package to reflect current ownership
+
+0.0.1
+-----
+* fix external assets being disregarded
+
+0.0.0 - Initial Beta version
 -----
 * use [Ecosystem][ecosystem-link] to
   * build the functional relationship between AssetCollectionContract and HtmlOutputContract

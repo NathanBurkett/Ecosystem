@@ -1,4 +1,4 @@
-# RoadworkRah/Ecosystem
+# NathanBurkett/Ecosystem
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -12,7 +12,7 @@ Ecosystems are useful when you have collections of separate resources for differ
 To install Ecosystem as a Composer package, run:
 
 ``` bash
-composer require roadworkrah/ecosystem
+composer require nathanburkett/ecosystem
 ```
 
 Once it's installed, you can register the service provider in `config/app.php` in the `providers` array:
@@ -22,7 +22,7 @@ Once it's installed, you can register the service provider in `config/app.php` i
 
     ...
 
-	RoadworkRah\Ecosystem\Providers\EcosystemServiceProvider::class,
+	NathanBurkett\Ecosystem\Providers\EcosystemServiceProvider::class,
 ]
 ```
 
@@ -33,7 +33,7 @@ And register the `Ecosystem` facade in the the `aliases` array:
 
     ...
 
-    'Ecosystem' => RoadworkRah\Ecosystem\Facades\Ecosystem::class,
+    'Ecosystem' => NathanBurkett\Ecosystem\Facades\Ecosystem::class,
 ```
 
 Then publish Ecosystems's assets with `php artisan vendor:publish`. This will add the file `config/ecosystem.php`. This [config file][link-config] allows certain envionments to disable cache-busting strings.
@@ -55,8 +55,8 @@ The command `php artisan make:ecosystem StandardEcosystem` would generate the fo
 
 namespace App\Library\Ecosystems;
 
-use RoadworkRah\Ecosystem\Contracts\AssetCollectionContract;
-use RoadworkRah\Ecosystem\Entities\AbstractEcosystem as Ecosystem;
+use NathanBurkett\Ecosystem\Contracts\AssetCollectionContract;
+use NathanBurkett\Ecosystem\Entities\AbstractEcosystem as Ecosystem;
 
 class StandardEcosystem extends Ecosystem implements AssetCollectionContract
 {
@@ -241,14 +241,14 @@ If you discover any security related issues, please email ```nathan at nathanb d
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/roadworkrah/ecosystem.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/nathanburkett/ecosystem.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/thephpleague/:package_name/master.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/league/:package_name.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/roadworkrah/ecosystem
-[link-travis]: https://travis-ci.org/roadworkrah/ecosystem
-[link-downloads]: https://packagist.org/packages/roadworkrah/ecosystem
+[link-packagist]: https://packagist.org/packages/nathanburkett/ecosystem
+[link-travis]: https://travis-ci.org/nathanburkett/ecosystem
+[link-downloads]: https://packagist.org/packages/nathanburkett/ecosystem
 [link-author]: https://github.com/NathanBurkett
 [link-contributors]: ../../contributors
 [link-config]: src/config/ecosystem.php

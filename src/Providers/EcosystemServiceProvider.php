@@ -1,10 +1,10 @@
 <?php
 
-namespace RoadworkRah\Ecosystem\Providers;
+namespace NathanBurkett\Ecosystem\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use RoadworkRah\Ecosystem\Middleware\CheckEcosystemAction;
+use NathanBurkett\Ecosystem\Middleware\CheckEcosystemAction;
 
 class EcosystemServiceProvider extends ServiceProvider
 {
@@ -15,7 +15,7 @@ class EcosystemServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        $router->middleware('ecosystem', \RoadworkRah\Ecosystem\Middleware\CheckEcosystemAction::class);
+        $router->middleware('ecosystem', \NathanBurkett\Ecosystem\Middleware\CheckEcosystemAction::class);
         $this->publishConfig();
         $this->mergeAppConfigWithPackageConfig();
     }
@@ -48,8 +48,8 @@ class EcosystemServiceProvider extends ServiceProvider
     private function registerHtmlSupport()
     {
         $this->app->bind(
-            '\RoadworkRah\Ecosystem\Contracts\HtmlOutputContract',
-            '\RoadworkRah\Ecosystem\Builders\HtmlBuilder'
+            '\NathanBurkett\Ecosystem\Contracts\HtmlOutputContract',
+            '\NathanBurkett\Ecosystem\Builders\HtmlBuilder'
         );
     }
 
@@ -60,7 +60,7 @@ class EcosystemServiceProvider extends ServiceProvider
     private function registerEcosystemGenerator()
     {
         $this->app->singleton('command.roadworkrah.ecosystem', function ($app) {
-            return $app['RoadworkRah\Ecosystem\Commands\GenerateNewEcosystemCommand'];
+            return $app['NathanBurkett\Ecosystem\Commands\GenerateNewEcosystemCommand'];
         });
 
         $this->commands('command.roadworkrah.ecosystem');
